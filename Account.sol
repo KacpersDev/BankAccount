@@ -17,7 +17,7 @@ contract Account {
     }
 
     function withdraw(uint amount) external payable {
-        require(amount <= map[msg.sender], "Your account doesn't contains that amount of balance");
+        require(amount <= map[msg.sender], "Your account doesnt contains that amount of balance");
         if (amount == map[msg.sender]) {
             map[msg.sender] = 0;
         } else { 
